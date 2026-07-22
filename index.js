@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(cors({ origin: "*" }));
 
 // MongoDB connection - supports both local and cloud
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://hellotoseef_db_user:Touseef5961@cluster0.erq2arz.mongodb.net/?appName=Cluster0";
+const MONGODB_URI = process.env.MONGODB_URI
 
 mongoose
   .connect(MONGODB_URI)
